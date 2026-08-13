@@ -520,7 +520,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
-    - _Color: {r: 0.21999997, g: 0.27999997, b: 0.23999995, a: 1}
+    - _Color: {r: 0.22, g: 0.28, b: 0.24, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -775,7 +775,7 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222610387}
   m_Enabled: 1
-  serializedVersion: 12
+  serializedVersion: 13
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2.2
@@ -827,7 +827,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -876,6 +876,37 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &569803932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 569803933}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &569803933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569803932}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1523549211}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &695277241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,7 +1252,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.65, g: 0.18, b: 0.14, a: 1}
-    - _Color: {r: 0.65, g: 0.17999998, b: 0.13999996, a: 1}
+    - _Color: {r: 0.65, g: 0.18, b: 0.14, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -1374,7 +1405,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.27, g: 0.25, b: 0.32, a: 1}
-    - _Color: {r: 0.26999995, g: 0.24999997, b: 0.31999996, a: 1}
+    - _Color: {r: 0.27, g: 0.25, b: 0.32, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -1665,6 +1696,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5171492134341433373, guid: 1fc1ce395828bb7488f2d9d26b921ceb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171492134341433373, guid: 1fc1ce395828bb7488f2d9d26b921ceb, type: 3}
+      propertyPath: hideJointSpheres
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7899146910650749832, guid: 1fc1ce395828bb7488f2d9d26b921ceb, type: 3}
       propertyPath: debugLogs
       value: 0
@@ -1685,12 +1724,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5171492134341433373, guid: 1fc1ce395828bb7488f2d9d26b921ceb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2785590831571603647, guid: 1fc1ce395828bb7488f2d9d26b921ceb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1298936956}
+    - targetCorrespondingSourceObject: {fileID: 2785590831571603647, guid: 1fc1ce395828bb7488f2d9d26b921ceb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 569803933}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7963574813488247733, guid: 1fc1ce395828bb7488f2d9d26b921ceb, type: 3}
       insertIndex: -1
@@ -1789,10 +1832,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundChecker
   characterController: {fileID: 1523549215}
-  checkOrigin: {fileID: 0}
+  checkOrigin: {fileID: 569803933}
   groundMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
   checkRadius: 0.24
   checkOffset: 0.08
 --- !u!143 &1523549215
@@ -2067,7 +2110,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.12, g: 0.4, b: 0.78, a: 1}
-    - _Color: {r: 0.11999995, g: 0.39999998, b: 0.78, a: 1}
+    - _Color: {r: 0.12, g: 0.4, b: 0.78, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
